@@ -1,8 +1,8 @@
 asgiref==3.7.2
 backports.zoneinfo==0.2.1
-Django==4.2.6
-gunicorn==21.2.0
-packaging==23.2
-Pillow==10.0.1
+Django==4.2.4
+powerline-status==2.7
+python-decouple==3.8
 sqlparse==0.4.4
-typing-extensions==4.8.0
+typing_extensions==4.7.1
+WMI==1.4.9
