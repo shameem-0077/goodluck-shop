@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/splide.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{{title}}</title>
+</head>
+<body>
+    <section id="main-container">
+        <header>
+            <div class="left">
+                <h1 class="logo-container">
+                    <img src="{% static 'assets/images/good-luck-logo.svg' %}" alt="logo">
+
+                </h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Location</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="landing-page" class="splide" aria-label="Splide Basic HTML Example" >
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide bg-li first-landing-bg" style="background-image: url('{% static "assets/images/bg-1.png" %}')"></li>
+                    <li class="splide__slide bg-li" style="background-image: url('{% static "assets/images/bg-2.png" %}')"></li>
+                    <li class="splide__slide bg-li" style="background-image: url('{% static "assets/images/bg-3.png" %}')"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="what-we-deal-with" >
+            <div class="wrapper">
+                <h2>What we deal with</h2>
+                <ul>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
+                        <a href="#">
+                            <h4>Kitchen</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <script src="{% static 'js/splide.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}" ></script>
+</body>
+</html>
