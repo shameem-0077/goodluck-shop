@@ -73,6 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'goodluck.wsgi.application'
 
+CSRF_TRUSTED_ORIGINS = ['https://goodluck-shop-production.up.railway.app']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
