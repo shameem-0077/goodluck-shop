@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%m0esm)gapwbwes#kxwqaaqu=oj87!)zw*bf1!4jj*$)-j=1e_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['goodluck-shop-production.up.railway.app']
+ALLOWED_HOSTS = ['goodluck-shop-production.up.railway.app', '127.0.0.1']
 
 
 # Application definition

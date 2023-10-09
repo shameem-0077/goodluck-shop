@@ -12,10 +12,13 @@
     <section id="main-container">
         <header>
             <div class="left">
-                <h1 class="logo-container">
-                    <img src="{% static 'assets/images/good-luck-logo.svg' %}" alt="logo">
-
-                </h1>
+                <div class="logo-wrapper">
+                    <div class="logo-container">
+                        <img src="{% static 'assets/images/good-luck-logo.svg' %}" alt="logo">
+                    </div>
+                    <h3>Good Luck</h3>
+                </div>
+                
             </div>
             <div class="right">
                 <ul>
@@ -37,9 +40,13 @@
         <section id="landing-page" class="splide" aria-label="Splide Basic HTML Example" >
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide bg-li first-landing-bg" style="background-image: url('{% static "assets/images/bg-1.png" %}')"></li>
-                    <li class="splide__slide bg-li" style="background-image: url('{% static "assets/images/bg-2.png" %}')"></li>
-                    <li class="splide__slide bg-li" style="background-image: url('{% static "assets/images/bg-3.png" %}')"></li>
+                    {% for data in landing_page_datas %}
+                    <li class="splide__slide bg-li first-landing-bg" style="background-image: url('{{data.featured_image.url}}')">
+                        <div class="landing-bg-overlay">
+                            <h1>{{data.title}}</h1>
+                        </div>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </section>
@@ -47,47 +54,47 @@
             <div class="wrapper">
                 <h2>What we deal with</h2>
                 <ul>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
+                    {% for data in what_we_deal_datas %}
+                    <li class="deal-with-bg" style="background-image: url('{{data.featured_image.url}}')">
+                        <div class="overlay">
+                        </div>
+                        <p>{{ data.title }}</p>
                     </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
-                    <li class="deal-with-bg" style="background-image: url('{% static "assets/images/kitchen.jpg" %}')">
-                        <a href="#">
-                            <h4>Kitchen</h4>
-                        </a>
-                    </li>
+                    {% endfor %}
                 </ul>
+            </div>
+        </section>
+        <section id="contact-us">
+            <div class="wrapper">
+                <div class="top">
+                    <h2>Contact us</h2>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <div class="address">
+                            <div class="left">
+                                <div class="address-icon-div">
+                                    <img src="{% static 'assets/images/address-icon.png' %}" alt="address">
+                                </div>
+                            </div>
+                            <div class="right">
+                                <p class="address-text">
+                                    Good luck electricals, plumbing & sanitary,<br>
+                                    Opp. Taxi stand,<br>
+                                    Varod road,<br>
+                                    Murukkumpatta,<br>
+                                    Ottappalam,<br>
+                                    Chunangad po,<br>
+                                    Palakkad dist,<br>
+                                    Kerala. 679511
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <iframe class="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62854.24661586842!2d76.30299378637199!3d10.067061320794464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b081345c70dc325%3A0x23978b711a326723!2sSecret%20Routes%20Kayaking%20Kadamakkudy%20-Kochi%20Kayaking!5e0!3m2!1sen!2sin!4v1696835405638!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </section>

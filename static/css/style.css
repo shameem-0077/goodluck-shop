@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
 img {
     width: 100%;
     display: block;
@@ -17,6 +20,10 @@ ul {
     list-style: none;
 }
 
+.wrapper {
+    padding: 0 50px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,7 +33,16 @@ header {
     height: 100px;
 }
 
-header > .left > .logo-container {
+header > .left > .logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+header > .left > .logo-wrapper > h3 {
+    font-size: 20px;
+}
+
+header > .left > .logo-wrapper > .logo-container {
     width: 90px;
 }
 
@@ -36,6 +52,8 @@ header > .right > ul {
 
 header > .right > ul > li {
     margin-right: 15px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 #landing-page > .splide__track > .splide__list > .bg-li  {
@@ -43,6 +61,14 @@ header > .right > ul > li {
     background-position: top center;
     background-repeat: no-repeat;
     height: calc(100vh - 105px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landing-page > .splide__track > .splide__list > .bg-li > .landing-bg-overlay > h1 {
+    font-size: 80px;
+    color: white;
 }
 
 
@@ -61,17 +87,10 @@ header > .right > ul > li {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    border-radius: 20px;
 }
 
-#what-we-deal-with > div.wrapper > ul > li.deal-with-bg:hover {
-    background-image: none !important;
-}
-
-#what-we-deal-with > div.wrapper > ul > li.deal-with-bg > a {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
 
 #what-we-deal-with > div.wrapper {
     display: flex;
@@ -80,7 +99,7 @@ header > .right > ul > li {
 }
 
 #what-we-deal-with > div.wrapper > h2 {
-    font-size: 60px;
+    font-size: 30px;
     padding: 30px;
 }
 
@@ -90,3 +109,136 @@ header > .right > ul > li {
     flex-wrap: wrap;
     width: 80%;
 }
+
+#what-we-deal-with > div.wrapper > ul > .deal-with-bg > div.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+    border-radius: 20px;
+
+}
+
+#what-we-deal-with > div.wrapper > ul > .deal-with-bg > p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+#contact-us > .wrapper {
+    margin-top: 60px;
+}
+
+#contact-us > .wrapper > .top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+
+
+#contact-us > .wrapper > .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-us > .wrapper > .bottom > .right > .location-iframe {
+    border-radius: 20px;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+}
+
+
+.address > .left {
+    
+
+}
+
+.address > .left > .address-icon-div {
+    
+    width: 40px;
+
+}
+
+.address > .right > .address-text {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 375px) {
+    header {
+        height: 50px;
+    }
+
+    header > .left > .logo-wrapper > .logo-container {
+        width: 40px;
+    }
+    header > div.left {
+        width: 100%;
+    }
+
+    header > div.left > div.logo-wrapper {
+        justify-content: space-between;
+
+    }
+
+    #landing-page > .splide__track > .splide__list > .bg-li {
+        height: calc(100vh - 50px);
+    }
+
+    #landing-page > .splide__track > .splide__list > .bg-li > .landing-bg-overlay > h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    header > .right > ul {
+        display: none;
+    }
+
+    #contact-us > .wrapper > .bottom > .right  {
+        display: none;
+    }
+
+    .address {
+        display: block;
+    }
+
+    .address > .left {
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    div.address > div.right > p {
+        text-align: center;
+    }
+
+    #contact-us > .wrapper > .bottom {
+        justify-content: center;
+    }
+
+    .address > .right > .address-text  {
+        margin-left: unset;
+    }
+
+    #contact-us > .wrapper > .top {
+        margin-bottom: 30px;
+    }
+
+    #what-we-deal-with > div.wrapper > ul {
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: unset;
+    }
+
+    
+  }
