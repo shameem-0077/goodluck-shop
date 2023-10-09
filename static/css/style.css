@@ -172,7 +172,7 @@ header > .right > ul > li {
 }
 
 
-@media only screen and (min-width: 375px) {
+@media (max-width: 480px) {
     header {
         height: 50px;
     }
@@ -226,6 +226,7 @@ header > .right > ul > li {
 
     .address > .right > .address-text  {
         margin-left: unset;
+        padding: 0 10px;
     }
 
     #contact-us > .wrapper > .top {
