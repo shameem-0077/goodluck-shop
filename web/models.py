@@ -16,3 +16,11 @@ class WhatWeDealWith(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class FeaturedBrand(models.Model):
+    title = models.CharField(max_length=128)
+    featured_image = models.FileField(upload_to="brands/featured/")
+
+    def __str__(self):
+        return self.title

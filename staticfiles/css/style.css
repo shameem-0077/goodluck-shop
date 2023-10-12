@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+
+@font-face {
+    font-family: 'shameem';
+    font-style: light;
+    src: url('../fonts/JosefinSans-Light.ttf') format('ttf')
+
+}
+
+body {
+    font-family: 'shameem';
+}
+
 img {
     width: 100%;
     display: block;
@@ -11,6 +23,7 @@ img {
 a {
     color: black;
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 ul {
