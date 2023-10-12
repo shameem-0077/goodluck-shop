@@ -4,6 +4,7 @@ from django.db import models
 class LandingPage(models.Model):
     title = models.CharField(max_length=200)
     featured_image = models.FileField(upload_to="landingpage/featured/")
+    font_color = models.CharField(max_length=128, default='black')
 
 
     def __str__(self):
