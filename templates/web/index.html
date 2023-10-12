@@ -46,7 +46,7 @@
                     {% for data in landing_page_datas %}
                     <li class="splide__slide bg-li first-landing-bg" style="background-image: url('{{data.featured_image.url}}')">
                         <div class="landing-bg-overlay">
-                            <h1>{{data.title}}</h1>
+                            <h1 style="color: {{data.font_color}};" >{{data.title}}</h1>
                         </div>
                     </li>
                     {% endfor %}
