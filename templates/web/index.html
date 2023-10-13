@@ -46,7 +46,7 @@
                     {% for data in landing_page_datas %}
                     <li class="splide__slide bg-li first-landing-bg" style="background-image: url('{{data.featured_image.url}}')">
                         <div class="landing-bg-overlay">
-                            <h1>{{data.title}}</h1>
+                            <h1 style="color: {{data.font_color}};" >{{data.title}}</h1>
                         </div>
                     </li>
                     {% endfor %}
@@ -93,32 +93,74 @@
                 </div>
                 <div class="bottom">
                     <div class="left">
-                        <div class="address">
-                            <div class="left">
-                                <div class="address-icon-div">
-                                    <img src="{% static 'assets/images/address-icon.png' %}" alt="address">
-                                </div>
-                            </div>
-                            <div class="right">
-                                <p class="address-text">
-                                    Good luck electricals, plumbing & sanitary,<br>
-                                    Opp. Taxi stand,<br>
-                                    Varod road,<br>
-                                    Murukkumpatta,<br>
-                                    Ottappalam,<br>
-                                    Chunangad po,<br>
-                                    Palakkad dist,<br>
-                                    Kerala. 679511
-                                </p>
-                            </div>
+                        <div class="map-image">
+                            <a target="_blank" href="https://www.google.com/maps/@10.8023022,76.4043769,3a,75y,226.76h,90t/data=!3m7!1e1!3m5!1sFrOTdsRFus1u-s1jprVGXg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DFrOTdsRFus1u-s1jprVGXg%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D226.76126%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656?entry=ttu">
+                                <img src="{% static 'assets/images/shop-map.png' %}" alt="map">
+                            </a>
                         </div>
                     </div>
                     <div class="right">
-                        <iframe class="location-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62854.24661586842!2d76.30299378637199!3d10.067061320794464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b081345c70dc325%3A0x23978b711a326723!2sSecret%20Routes%20Kayaking%20Kadamakkudy%20-Kochi%20Kayaking!5e0!3m2!1sen!2sin!4v1696835405638!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <ul class="contact-us-ul">
+                            <li class="location-li common-contact-us-li">
+                                <div class="top">
+                                    <div class="location-icon common-li-icon">
+                                        <img src="{% static 'assets/images/address-icon.png' %}" alt="address" />
+                                    </div>
+                                    <div class="common-contact-us-data">
+                                        <h4>Our shop address</h4>
+                                        <p class="address-text">
+                                            Good Luck Electricals, Plumbing & Sanitary,<br>
+                                            Varod road,
+                                            Murukkumpatta,
+                                            Chunangad po,<br>
+                                            Ottappalam 
+                                            Palakkad dist,
+                                            Kerala.<br>
+                                            679511
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="call-us-li common-contact-us-li">
+                                <div class="top">
+                                    <div class="call-us-icon common-li-icon">
+                                        <img src="{% static 'assets/icons/whatsapp_icon.png' %}" alt="phone-call" />
+                                    </div>
+                                    <div class="common-contact-us-data">
+                                        <h4>Call Us</h4>
+                                        <p>8157891497 | 8113021501</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="our-timing-li common-contact-us-li">
+                                <div class="top">
+                                    <div class="our-timing-icon common-li-icon">
+                                        <img src="{% static 'assets/icons/clock_icon.png' %}" alt="phone-call" />
+                                    </div>
+                                    <div class="common-contact-us-data">
+                                        <h4>Our Timing</h4>
+                                        <p>Mon - Sun : 10:00am to 7:00pm</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-main">
+                <div class="wrapper">
+                    <div class="left">
+                        <h2>@GoodLuck private limited</h2>
+                    </div>
+                    <div class="right">
+                        <h5>Privacy & policy</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
     <script src="{% static 'js/splide.min.js' %}"></script>
     <script src="{% static 'js/script.js' %}" ></script>

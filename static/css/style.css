@@ -30,7 +30,7 @@
 
 
 body {
-    font-family: 'light';
+    font-family: 'medium';
 }
 
 body::-webkit-scrollbar {
@@ -181,7 +181,7 @@ header > .wrapper > .right > ul > li > a {
 #featured-brands {
     background-color: black;
     border-radius: 10px;
-    margin: 150px 0;
+    margin: 100px 0;
 }
 
 
@@ -226,52 +226,113 @@ header > .wrapper > .right > ul > li > a {
     object-fit: scale-down;
 }
 
-
-
-#contact-us > .wrapper {
-    margin-top: 60px;
+#contact-us {
 }
+
+
+
 
 #contact-us > .wrapper > .top {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 50px;
+
 }
 
 
 
 #contact-us > .wrapper > .bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background: #000;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#contact-us > .wrapper > .bottom > .left {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    padding: 20px;
+
+}
+
+#contact-us > .wrapper > .bottom > .left > .map-image {
+    width: 800px;
+    
+}
+
+#contact-us > .wrapper > .bottom > .left > .map-image > a > img {
+    border-radius: 10px;
+    
 }
 
 #contact-us > .wrapper > .bottom > .right {
-    display: none;
-}
-
-#contact-us > .wrapper > .bottom > .right > .location-iframe {
-    border-radius: 20px;
-}
-
-.address {
     display: flex;
-    justify-content: center;
-}
-
-
-.address > .left > .address-icon-div {
-    
-    width: 40px;
+    align-items: center;
+    padding: 50px;
 
 }
 
-.address > .right > .address-text {
+#contact-us > .wrapper > .bottom > .right > .contact-us-ul {
+
+}
+
+#contact-us > .wrapper > .bottom > .right > .contact-us-ul {
+
+}
+
+.common-contact-us-li > .top > div.common-contact-us-data > h4 {
+    margin-bottom: 10px;
     font-size: 25px;
-    margin-left: 15px;
-    margin-top: 10px;
+    padding: 10px 0;
+
+}
+
+.common-contact-us-data > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
+
+
+.common-contact-us-data > p.address-text {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.common-contact-us-li {
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+}
+
+.common-contact-us-li > .top {
+    display: flex;
+}
+
+.common-contact-us-li > .top > .common-li-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-main {
+    padding: 30px 0;
+    background-color: #000;
+}
+
+.footer-main > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'light';
+}
 @media (max-width: 480px) {
     header {
         height: 50px;
@@ -302,10 +363,6 @@ header > .wrapper > .right > ul > li > a {
         display: none;
     }
 
-    #contact-us > .wrapper > .bottom > .right  {
-        display: none;
-    }
-
     .address {
         display: block;
     }
@@ -322,6 +379,7 @@ header > .wrapper > .right > ul > li > a {
 
     #contact-us > .wrapper > .bottom {
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .address > .right > .address-text  {
@@ -331,6 +389,7 @@ header > .wrapper > .right > ul > li > a {
 
     #contact-us > .wrapper > .top {
         margin-bottom: 30px;
+        font-size: 30px;
     }
 
     #what-we-deal-with > div.wrapper > ul {
@@ -343,6 +402,22 @@ header > .wrapper > .right > ul > li > a {
 
     #featured-brands {
         margin: 50px 0;
+    }
+
+    #contact-us > .wrapper > .bottom > .left > .map-image {
+        width: 400px;
+    }
+
+    #contact-us > .wrapper > .bottom > .left {
+        margin-right: unset;
+    }
+
+    .footer-main > .wrapper {
+        padding: 0 20px;
+    }
+
+    div.footer-main > div.wrapper > div.left > h2 {
+        font-size: 15px;
     }
 
     
