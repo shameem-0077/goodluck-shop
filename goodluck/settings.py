@@ -73,7 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'goodluck.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://goodluck-shop-production.up.railway.app', 'good-luck.store']
+CSRF_TRUSTED_ORIGINS = ['https://goodluck-shop-production.up.railway.app', 'https://good-luck.store']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
