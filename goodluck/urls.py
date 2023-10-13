@@ -4,7 +4,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('good-luck-admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include("web.urls", namespace="web_urls")),
 ]
 
