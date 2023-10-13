@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-%m0esm)gapwbwes#kxwqaaqu=oj87!)zw*bf1!4jj*$)-j=1e_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['goodluck-shop-production.up.railway.app', '127.0.0.1']
+ALLOWED_HOSTS = ['goodluck-shop-production.up.railway.app', '127.0.0.1', 'good-luck.store']
 
 
 # Application definition
@@ -73,7 +73,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'goodluck.wsgi.application'
 
-CSRF_TRUSTED_ORIGINS = ['https://goodluck-shop-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://goodluck-shop-production.up.railway.app', 'good-luck.store']
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
