@@ -8,6 +8,7 @@ var splidelandingpage = new Splide( '#landing-page', {
 splidelandingpage.mount();
 
 var splidebrands = new Splide( '#featured-brands-splide', {
+    type: 'loop',
     autoplay: true,
     gap: "1rem",
     perPage: 4,
